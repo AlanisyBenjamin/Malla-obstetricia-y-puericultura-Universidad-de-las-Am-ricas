@@ -1,1 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #ffe0f0, #ffd6ec);
+  color: #5a004c;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #d60087;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #880046;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+
+.semestre {
+  background-color: #fff0f6;
+  border: 2px solid #ffaad4;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(255, 0, 144, 0.1);
+}
+
+.semestre h3 {
+  text-align: center;
+  color: #c40073;
+  margin-bottom: 1rem;
+}
+
+.ramo {
+  background-color: #ffd4ea;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid #ff7eb6;
+  transition: background-color 0.3s;
+}
+
+.ramo:hover {
+  background-color: #ffc1df;
+}
+
+.ramo.aprobado {
+  background-color: #e89acb;
+  text-decoration: line-through;
+  color: #7e004e;
+}
+
+.ramo.bloqueado {
+  background-color: #f9d0df;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.barbie-img {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 140px;
+  opacity: 0.9;
+  z-index: 1;
+}
 
